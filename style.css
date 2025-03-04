@@ -64,10 +64,24 @@ header p {
     color: var(--clr-neutral-500);
 }
 
-.col {
+/* .wrapper {
     display: flex;
     flex-direction: column;
     
+} */
+
+@media (min-width: 768px) {
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .col {
+        flex: 1;
+    }
+
 }
 
 .card {
@@ -76,6 +90,16 @@ header p {
     margin-block-end: 2rem;
     border-radius: 5px;
     box-shadow: 0px 15px 14px -5px rgb(211, 224, 228);
+}
+
+@media (min-width: 768px) {
+    .card {
+        margin-block-end: 0;
+    }
+
+    .team-card {
+        margin-block-end: 2rem;
+    }
 }
 
 .border-cyan {
